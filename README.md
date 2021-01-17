@@ -10,7 +10,7 @@ Build the image
 docker build -t <dockertag> .
 ```
 
-Create a shell script called `composer-php7<version>.sh` with this content :
+Create a shell script called `composer-php<version>.sh` with this content :
 ```
 #!/bin/bash
 docker run --rm --interactive --tty \
@@ -35,8 +35,10 @@ docker pull ihneo/composer:<dockertag>
 ## Supported tags and respective `Dockerfile` links
 
 -	[`php-7.1-alpine`](https://github.com/ihneo/composer/blob/master/php-7.1/alpine/Dockerfile)
+-	[`php-7.2-alpine`](https://github.com/ihneo/composer/blob/master/php-7.2/alpine/Dockerfile)
 -	[`php-7.3-alpine`](https://github.com/ihneo/composer/blob/master/php-7.3/alpine/Dockerfile)
--	[`php-7.4-alpine`, `latest`](https://github.com/ihneo/composer/blob/master/php-7.4/alpine/Dockerfile)
+-	[`php-7.4-alpine`](https://github.com/ihneo/composer/blob/master/php-7.4/alpine/Dockerfile)
+-	[`php-8.0-alpine`, `latest`](https://github.com/ihneo/composer/blob/master/php-8.0/alpine/Dockerfile)
 
 ## Example of usage with the images available at Dockerhub
 ```
@@ -51,3 +53,7 @@ docker run --rm --interactive --tty \
   --user $(id -u):$(id -g) \
   ihneo/composer:<dockertag> composer "$@"
 ```
+
+## Composer 1 or 2
+To use composer in version 1, command is `composer-1`
+To use composer in version 2, command is `composer-2` or `composer`

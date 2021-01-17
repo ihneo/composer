@@ -1,4 +1,4 @@
-FROM ihneo/php:7.3-cli-alpine
+FROM ihneo/php:7.2-cli-alpine
 
 # git client
 RUN apk add --update --no-cache git
