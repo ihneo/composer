@@ -55,5 +55,7 @@ docker run --rm --interactive --tty \
 ```
 
 ## Composer 1 or 2
-To use composer in version 1, command is `composer-1`
-To use composer in version 2, command is `composer-2` or `composer`
+
+To use composer in version 1, command is `composer`
+
+To use composer in version 2, command is `composer2`
